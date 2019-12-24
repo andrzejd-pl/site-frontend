@@ -5,9 +5,9 @@
         </div>
         <div id="links">
             <ul>
-                <li><a href="https://www.linkedin.com/in/andrzej-dybowski/">LinkedIn</a></li>
-                <li><a href="https://github.com/andrzejd-pl/">GitHub</a></li>
-                <li><a href="https://github.com/andrzejd-pl/portfolio">Portfolio</a></li>
+                <li><a href="https://www.linkedin.com/in/andrzej-dybowski/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/andrzejd-pl/" target="_blank">GitHub</a></li>
+                <li><a href="https://github.com/andrzejd-pl/portfolio" target="_blank">Portfolio</a></li>
             </ul>
         </div>
     </div>
