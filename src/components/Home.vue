@@ -5,9 +5,23 @@
         </div>
         <div id="links">
             <ul>
-                <li><a href="https://www.linkedin.com/in/andrzej-dybowski/" target="_blank">LinkedIn</a></li>
-                <li><a href="https://github.com/andrzejd-pl/" target="_blank">GitHub</a></li>
-                <li><a href="https://github.com/andrzejd-pl/portfolio" target="_blank">Portfolio</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/in/andrzej-dybowski/" target="_blank">
+                        <font-awesome-icon :icon="['fab', 'linkedin']"/>
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/andrzejd-pl/" target="_blank">
+                        <font-awesome-icon :icon="['fab', 'github']"/>
+                        GitHub
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/andrzejd-pl/portfolio" target="_blank">
+                        Portfolio
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -24,11 +38,14 @@
     ul {
         list-style-type: none;
     }
+
     li {
         display: inline-block;
         margin: 0 5px;
     }
+
     a {
+        text-decoration: none;
         color: #42b983;
     }
 </style>
