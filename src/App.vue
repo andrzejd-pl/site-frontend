@@ -6,6 +6,9 @@
       </router-link>
       <ul style="display: inline-block;">
         <li>
+          <router-link to="/blog">Blog</router-link>
+        </li>
+        <li>
           <a href="https://www.linkedin.com/in/andrzej-dybowski/" target="_blank">
             <font-awesome-icon :icon="['fab', 'linkedin']" /> LinkedIn
           </a>
@@ -17,9 +20,6 @@
         </li>
         <li>
           <a href="https://github.com/andrzejd-pl/portfolio" target="_blank">Portfolio</a>
-        </li>
-        <li>
-          <router-link to="/users">Users</router-link>
         </li>
       </ul>
     </div>
