@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueRouter from 'vue-router'
+import Users from './Users.vue'
+import Home from './components/Home.vue'
+
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
@@ -12,6 +16,18 @@ library.add(faGithub);
 library.add(faUserSecret);
 Vue.config.productionTip = false;
 
+Vue.use(VueRouter);
+
+const routes = [
+  { path: '/users', component: Users },
+  { path: '/', component: Home},
+];
+
+const router = new VueRouter({
+  routes
+});
+
 new Vue({
   render: h => h(App),
-}).$mount('#app')
+  router,
+}).$mount('#app');
