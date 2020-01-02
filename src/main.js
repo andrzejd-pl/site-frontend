@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueRouter from 'vue-router'
-import Users from './Users.vue'
-import Home from './components/Home.vue'
+import Home from '@/components/Home.vue'
+import Blog from '@/components/Blog.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
@@ -19,7 +19,7 @@ Vue.config.productionTip = false;
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/users', component: Users },
+  { path: '/blog', component: Blog },
   { path: '/', component: Home},
 ];
 
