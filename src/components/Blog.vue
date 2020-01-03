@@ -4,7 +4,7 @@
 
         <div class="post" v-for="post in posts" v-bind:key="post.Uuid">
             <h3 v-html="post.Title"></h3>
-            <p v-html="post.Content"></p>
+            <vue-markdown>{{ post.Content }}</vue-markdown>
         </div>
     </div>
 </template>
@@ -16,7 +16,8 @@
 <script>
 import axios from 'axios';
 import Loading from 'vue-loading-overlay';
-import 'vue-loading-overlay/dist/vue-loading.css'
+import 'vue-loading-overlay/dist/vue-loading.css';
+import VueMarkdown from 'vue-markdown';
 
 export default {
     name: 'Blog',
@@ -29,6 +30,7 @@ export default {
     },
     components: {
         Loading,
+        VueMarkdown,
     },
     mounted() {
         axios.get("https://andrzejd.pl/api/posts")
