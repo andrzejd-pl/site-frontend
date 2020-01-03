@@ -1,29 +1,15 @@
-# vue
+# https://andrzejd.pl
 
-## Project setup
-```
-npm install
-```
+This is project [my site](https://andrzejd.pl), where describe my private projects, show refletions and present my person.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Project is write in JavaScript, using Vue framework.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+If you use this repo as template, you can use Docker environment to deploy.
 
-### Run your tests
-```
-npm run test
-```
+## How to run
 
-### Lints and fixes files
-```
-npm run lint
-```
+### Docker
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```bash
+docker run -p 80:8080 andrzejd/site-frontend:latest
+```
