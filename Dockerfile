@@ -1,9 +1,10 @@
 FROM node:lts-alpine
-RUN npm install -g http-server
+RUN yarn global add http-server
 WORKDIR /app
 COPY package*.json ./
-RUN npm install
+COPY yarn.lock ./
+RUN yarn install
 COPY . .
-RUN npm run build
+RUN yarn run build
 EXPOSE 8080
 CMD [ "http-server", "dist" ]
